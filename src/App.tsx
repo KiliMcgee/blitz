@@ -9,6 +9,8 @@ import Splash from "./components/splash/splash";
 // const About = lazy(() => import("./components/About"));
 // const NotFound = lazy(() => import("./components/NotFound"));
 
+// TODO -- Enforce strict linting during build: { ..., "build": "tsc -b && vite build", ... }
+
 const App = () => {
   return (
     <>
