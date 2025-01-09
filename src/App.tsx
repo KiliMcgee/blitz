@@ -12,15 +12,17 @@ import Splash from "./components/splash/splash";
 // TODO -- Enforce strict linting during build: { ..., "build": "tsc -b && vite build", ... }
 
 const App = () => {
+  const ROOT = "/blitz";
+
   return (
     <>
       <Nav />
       <Router>
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
-            <Route path="/" element={<Splash />} />
-            <Route path="/about" element={<>About</>} />
-            <Route path="*" element={<>Not Found</>} />
+            <Route path={ROOT} element={<Splash />} />
+            <Route path={ROOT + "/about"} element={<>About</>} />
+            <Route path={ROOT + "*"} element={<>Not Found</>} />
           </Routes>
         </Suspense>
       </Router>
