@@ -1,7 +1,7 @@
 import blitzLogo from "../../assets/blitz.png";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 
-const Nav = () => {
+const Navbar = () => {
   return (
     <>
       <a href=".">
@@ -16,4 +16,4 @@ const Nav = () => {
   );
 }
 
-export default Nav;
+export default Navbar
